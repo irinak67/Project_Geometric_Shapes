@@ -45,7 +45,7 @@ namespace Project_Geometric_Shapes.Test
         {
             if (_width > 0 && _length > 0)
             {
-                double area = _width * _length;
+                double area = Math.Round(_width * _length, 2);
                 return area;
 
             }
@@ -70,7 +70,7 @@ namespace Project_Geometric_Shapes.Test
         {
             if (_width > 0 && _length > 0)
             {
-                double perimeter = 2 * (_width + _length);
+                double perimeter = Math.Round(2 * (_width + _length),2);
                 return perimeter;
             }
             else if (_width <= 0)

@@ -35,7 +35,7 @@ namespace Project_Geometric_Shapes.Test
         {
             if (_radius > 0)
             {
-                double area = 3.14 * _radius * _radius;
+                double area = Math.Round(3.14 * _radius * _radius, 2);
                 return area;
             }
             else
@@ -54,7 +54,7 @@ namespace Project_Geometric_Shapes.Test
         {
             if (_radius > 0)
             {
-                double perimeter = 2 * 3.14 * _radius;
+                double perimeter = Math.Round(2 * 3.14 * _radius, 2);
                 return perimeter;
             }
             else
