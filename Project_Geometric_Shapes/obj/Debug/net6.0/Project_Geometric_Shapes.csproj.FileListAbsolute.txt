@@ -1,0 +1,5 @@
+C:\Users\Best_Mom\Desktop\Lessons_Zionet\DevOps\Project_Geometric_Shapes\Project_Geometric_Shapes\obj\Debug\net6.0\Project_Geometric_Shapes.csproj.AssemblyReference.cache
+C:\Users\Best_Mom\Desktop\Lessons_Zionet\DevOps\Project_Geometric_Shapes\Project_Geometric_Shapes\obj\Debug\net6.0\Project_Geometric_Shapes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Best_Mom\Desktop\Lessons_Zionet\DevOps\Project_Geometric_Shapes\Project_Geometric_Shapes\obj\Debug\net6.0\Project_Geometric_Shapes.AssemblyInfoInputs.cache
+C:\Users\Best_Mom\Desktop\Lessons_Zionet\DevOps\Project_Geometric_Shapes\Project_Geometric_Shapes\obj\Debug\net6.0\Project_Geometric_Shapes.AssemblyInfo.cs
+C:\Users\Best_Mom\Desktop\Lessons_Zionet\DevOps\Project_Geometric_Shapes\Project_Geometric_Shapes\obj\Debug\net6.0\Project_Geometric_Shapes.csproj.CoreCompileInputs.cache
