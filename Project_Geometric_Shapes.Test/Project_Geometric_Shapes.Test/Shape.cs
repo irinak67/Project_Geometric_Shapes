@@ -32,8 +32,7 @@ namespace Project_Geometric_Shapes.Test
         //{
         //    this.color = color;
         //}
-
-        ////TODO
+       
         //bool isFilled()
         //{
         //    return true;
