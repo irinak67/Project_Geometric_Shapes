@@ -37,7 +37,6 @@ namespace Project_Geometric_Shapes.Test
             {
                 double area = 3.14 * _radius * _radius;
                 return area;
-
             }
             else
             {

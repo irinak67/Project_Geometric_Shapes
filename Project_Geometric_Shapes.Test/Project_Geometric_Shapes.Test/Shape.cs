@@ -22,25 +22,6 @@ namespace Project_Geometric_Shapes.Test
             _fill = (bool)Fill;
         }
 
-        ////TODO
-        //string GetColor()
-        //{
-        //    return color;           
-        //}
-
-        //void SetColor(string color)
-        //{
-        //    this.color = color;
-        //}
-       
-        //bool isFilled()
-        //{
-        //    return true;
-        //}
-        //void setFilled(bool fill)
-        //{
-        //    fill = fill;
-        //}
         public override string ToString()
         {
             string isFilled = _fill == true ? "filled" : "not filled";

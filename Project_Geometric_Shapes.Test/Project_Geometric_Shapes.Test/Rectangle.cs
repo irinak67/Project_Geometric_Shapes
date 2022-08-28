@@ -72,7 +72,6 @@ namespace Project_Geometric_Shapes.Test
             {
                 double perimeter = 2 * (_width + _length);
                 return perimeter;
-
             }
             else if (_width <= 0)
             {
