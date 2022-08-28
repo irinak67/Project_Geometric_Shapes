@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_Geometric_Shapes.Test
 {
-    internal class Circle : Shape, IGeometricObject
+    public class Circle : Shape, IGeometricObject
     {
         private double _radius;
         public double Radius
@@ -17,7 +17,7 @@ namespace Project_Geometric_Shapes.Test
 
         public Circle()
         {
-            double _radius = 1.0; 
+            _radius = 1.0; 
         }
         public Circle(double radius)
         {

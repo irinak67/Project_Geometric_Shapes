@@ -24,8 +24,8 @@ namespace Project_Geometric_Shapes.Test
 
         public Rectangle()
         {
-            double _width = 1.0;
-            double _length = 1.0;
+            _width = 1.0;
+            _length = 1.0;
         }
         public Rectangle(double width, double length)
         {

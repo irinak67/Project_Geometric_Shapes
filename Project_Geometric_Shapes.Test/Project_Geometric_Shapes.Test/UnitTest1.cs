@@ -36,8 +36,16 @@ namespace Project_Geometric_Shapes.Test
         public void Test_class_Circle_without_argument()
         {
             Circle circle = new Circle();
-            string testText = "A Circle with radius = 1.0, which is a subclass of A Shape with color of green and filled";
+            string testText = "A Circle with radius = 1, which is a subclass of A Shape with color of green and filled";
             Assert.That(circle.ToString(), Is.EqualTo(testText));
+        }
+
+        [Test]
+        public void Test_class_Rectangle_without_argument()
+        {
+            Rectangle rectangle = new Rectangle();
+            string testText = "A Rectangle with width = 1 and length = 1, which is a subclass of A Shape with color of green and filled";
+            Assert.That(rectangle.ToString(), Is.EqualTo(testText));
         }
     }
 }
