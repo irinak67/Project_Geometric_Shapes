@@ -11,6 +11,11 @@ namespace Project_Geometric_Shapes.Test
         string _color;
         bool _fill;
 
+
+        public string Color { get { return _color; } set { _color = value; }
+        }
+        public bool Fill { get { return _fill; } set { _fill = value; } }
+        
         public Shape()
         {
             _color = "green";
