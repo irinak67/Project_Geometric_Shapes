@@ -8,27 +8,24 @@ namespace Project_Geometric_Shapes.Test
 {
     public abstract class Shape 
     {
-        string? color;
-        bool? fill;
+        string _color;
+        bool _fill;
 
         public Shape()
         {
-            color = "green";
-            fill = true;
+            _color = "green";
+            _fill = true;
         }
-        public Shape(string? Color, bool? Fill)
+        public Shape(string Color, bool Fill)
         {
-            color = Color;
-            fill = (bool)Fill;
+            _color = Color;
+            _fill = (bool)Fill;
         }
 
         ////TODO
         //string GetColor()
         //{
-        //    return color;
-        //    //string isFilled = fill == true ? "filled" : "Not filled";
-        //    //string text = "A Shape with color of " + color + " and " + isFilled;
-        //    //return text;
+        //    return color;           
         //}
 
         //void SetColor(string color)
@@ -47,8 +44,8 @@ namespace Project_Geometric_Shapes.Test
         //}
         public override string ToString()
         {
-            string isFilled = fill == true ? "filled" : "not filled";
-            string text = "A Shape with color of " + color + " and " + isFilled;
+            string isFilled = _fill == true ? "filled" : "not filled";
+            string text = "A Shape with color of " + _color + " and " + isFilled;
             return text;
             //return base.ToString();
         }
