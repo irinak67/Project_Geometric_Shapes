@@ -33,9 +33,7 @@ namespace Project_Geometric_Shapes.Test
             _length = length;            
         }
         public Rectangle(double width, double length, string Color, bool Fill) : base(Color, Fill)
-        {
-            Width = width;
-            Length = length;
+        {           
         }
 
         /// <summary>
@@ -45,8 +43,22 @@ namespace Project_Geometric_Shapes.Test
         /// <exception cref="NotImplementedException"></exception>
         public double getArea()
         {
-            double area = _width * _length;
-            return area;
+            if (_width > 0 && _length > 0)
+            {
+                double area = _width * _length;
+                return area;
+
+            }
+            else if (_width <= 0)
+            {
+                Console.WriteLine("incorrect width value");
+                return 0;
+            }
+            else
+            {
+                Console.WriteLine("incorrect length value");
+                return 0;
+            }
         }
 
         /// <summary>
@@ -56,8 +68,22 @@ namespace Project_Geometric_Shapes.Test
         /// <exception cref="NotImplementedException"></exception>
         public double getPerimeter()
         {
-            double perimeter = 2 * (_width + _length);
-            return perimeter;
+            if (_width > 0 && _length > 0)
+            {
+                double perimeter = 2 * (_width + _length);
+                return perimeter;
+
+            }
+            else if (_width <= 0)
+            {
+                Console.WriteLine("incorrect width value");
+                return 0;
+            }
+            else
+            {
+                Console.WriteLine("incorrect length value");
+                return 0;
+            }
         }
 
         public override string ToString()

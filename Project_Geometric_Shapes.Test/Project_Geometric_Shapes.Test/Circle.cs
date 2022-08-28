@@ -33,8 +33,17 @@ namespace Project_Geometric_Shapes.Test
         /// <returns></returns>
         public double getArea()
         {
-            double area = 3.14 * _radius * _radius;
-            return area;
+            if (_radius > 0)
+            {
+                double area = 3.14 * _radius * _radius;
+                return area;
+
+            }
+            else
+            {
+                Console.WriteLine("incorrect radius value");
+                return 0;
+            }
         }
 
 
@@ -44,8 +53,17 @@ namespace Project_Geometric_Shapes.Test
         /// <returns></returns>
         public double getPerimeter()
         {
-            double perimeter = 2 * 3.14 * _radius;
-            return perimeter;
+            if (_radius > 0)
+            {
+                double perimeter = 2 * 3.14 * _radius;
+                return perimeter;
+            }
+            else
+            {
+                Console.WriteLine("incorrect radius value");
+                return 0;
+            }
+
         }
 
         public override string ToString()
