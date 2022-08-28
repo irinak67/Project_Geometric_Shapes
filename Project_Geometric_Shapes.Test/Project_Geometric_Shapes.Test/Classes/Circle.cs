@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Project_Geometric_Shapes.Test.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_Geometric_Shapes.Test
+namespace Project_Geometric_Shapes.Test.Classes
 {
     public class Circle : Shape, IGeometricObject
     {
@@ -17,16 +18,16 @@ namespace Project_Geometric_Shapes.Test
 
         public Circle()
         {
-            _radius = 1.0; 
+            _radius = 1.0;
         }
         public Circle(double radius)
         {
             _radius = radius;
         }
-        public Circle(double radius, string Color, bool Fill) : base ( Color, Fill )
-        {           
+        public Circle(double radius, string Color, bool Fill) : base(Color, Fill)
+        {
         }
-        
+
         /// <summary>
         /// Get a area of the circle
         /// </summary>
@@ -35,8 +36,8 @@ namespace Project_Geometric_Shapes.Test
         {
             if (_radius > 0)
             {
-                double area = Math.Round(3.14 * _radius * _radius, 2);
-                return area;
+                double area = 3.14 * _radius * _radius;
+                return Math.Round(area, 2);
             }
             else
             {
@@ -54,8 +55,8 @@ namespace Project_Geometric_Shapes.Test
         {
             if (_radius > 0)
             {
-                double perimeter = Math.Round(2 * 3.14 * _radius, 2);
-                return perimeter;
+                double perimeter = 2 * 3.14 * _radius;
+                return Math.Round(perimeter, 2);
             }
             else
             {

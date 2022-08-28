@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_Geometric_Shapes.Test
+namespace Project_Geometric_Shapes.Test.Interfaces
 {
     public interface IGeometricObject
     {

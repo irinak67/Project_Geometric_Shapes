@@ -1,10 +1,11 @@
-﻿using System;
+﻿using Project_Geometric_Shapes.Test.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Project_Geometric_Shapes.Test
+namespace Project_Geometric_Shapes.Test.Classes
 {
     public class Rectangle : Shape, IGeometricObject
     {
@@ -30,10 +31,10 @@ namespace Project_Geometric_Shapes.Test
         public Rectangle(double width, double length)
         {
             _width = width;
-            _length = length;            
+            _length = length;
         }
         public Rectangle(double width, double length, string Color, bool Fill) : base(Color, Fill)
-        {           
+        {
         }
 
         /// <summary>
@@ -70,7 +71,7 @@ namespace Project_Geometric_Shapes.Test
         {
             if (_width > 0 && _length > 0)
             {
-                double perimeter = Math.Round(2 * (_width + _length),2);
+                double perimeter = Math.Round(2 * (_width + _length), 2);
                 return perimeter;
             }
             else if (_width <= 0)
