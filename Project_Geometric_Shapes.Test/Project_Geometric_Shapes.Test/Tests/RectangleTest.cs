@@ -16,9 +16,11 @@ namespace Project_Geometric_Shapes.Test.Tests
         [Test]
         public void Test_class_Rectangle_with_argument()
         {
+            rectangle.Color = "red";
+            rectangle.Fill = false;
             rectangle.Width = 10.0;
             rectangle.Length = 15.0;
-            string testText = "A Rectangle with width = 10 and length = 15, which is a subclass of A Shape with color of green and filled";
+            string testText = "A Rectangle with width = 10 and length = 15, which is a subclass of A Shape with color of red and not filled";
             Assert.That(rectangle.ToString(), Is.EqualTo(testText));
         }
         [Test]

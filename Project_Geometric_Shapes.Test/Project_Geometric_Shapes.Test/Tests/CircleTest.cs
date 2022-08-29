@@ -2,7 +2,6 @@ using Project_Geometric_Shapes.Test.Classes;
 
 namespace Project_Geometric_Shapes.Test.Tests
 {
-
     public class CircleTest
     {
         Circle circle;
@@ -25,8 +24,10 @@ namespace Project_Geometric_Shapes.Test.Tests
         [Test]
         public void Test_class_Circle_with_argument()
         {
+            circle.Color = "yellow";
+            circle.Fill = false;
             circle.Radius = 5.0;
-            string testText = "A Circle with radius = 5, which is a subclass of A Shape with color of green and filled";
+            string testText = "A Circle with radius = 5, which is a subclass of A Shape with color of yellow and not filled";
             Assert.That(circle.ToString(), Is.EqualTo(testText));
         }
         [Test]
