@@ -1,6 +1,7 @@
-﻿using Project_Geometric_Shapes.Test.Interfaces;
+﻿using Project_Geometric_Shapes_Framework.Interfaces;
+using System;
 
-namespace Project_Geometric_Shapes.Test.Classes
+namespace Project_Geometric_Shapes_Framework.Classes
 {
     public class Rectangle : Shape, IGeometricObject
     {

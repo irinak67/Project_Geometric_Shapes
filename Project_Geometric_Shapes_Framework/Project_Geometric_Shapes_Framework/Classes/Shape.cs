@@ -1,5 +1,5 @@
 ﻿
-namespace Project_Geometric_Shapes.Test.Classes
+namespace Project_Geometric_Shapes_Framework.Classes
 {
     public abstract class Shape
     {
@@ -19,6 +19,7 @@ namespace Project_Geometric_Shapes.Test.Classes
             _color = Color;
             _fill = Fill;
         }
+        
 
         public override string ToString()
         {
@@ -28,7 +29,7 @@ namespace Project_Geometric_Shapes.Test.Classes
                 string text = "A Shape with color of " + _color + " and " + isFilled;
                 return text;
             }
-            catch (Exception e)
+            catch (System.Exception e)
             {
                 return e.Message;
             }
