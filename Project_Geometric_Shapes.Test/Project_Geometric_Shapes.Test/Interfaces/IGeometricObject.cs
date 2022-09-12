@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Project_Geometric_Shapes.Test.Interfaces
+﻿namespace Project_Geometric_Shapes.Test.Interfaces;
+public interface IGeometricObject
 {
-    public interface IGeometricObject
-    {
-        public abstract double getArea();
-        public abstract double getPerimeter();
-    }
+    public abstract double getArea();
+    public abstract double getPerimeter();
 }

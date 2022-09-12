@@ -1,38 +1,53 @@
 ﻿
-namespace Project_Geometric_Shapes.Test.Classes
+namespace Project_Geometric_Shapes.Test.Classes;
+public abstract class Shape
 {
-    public abstract class Shape
+    string _color;
+    bool _fill;
+    public string Color
     {
-        string _color;
-        bool _fill;
-
-        public string Color { get { return _color; } set { _color = value; }}
-        public bool Fill { get { return _fill; } set { _fill = value; } }
-
-        public Shape()
+        get
         {
-            _color = "green";
-            _fill = true;
+            return _color;
         }
-        public Shape(string Color, bool Fill)
+        set
         {
-            _color = Color;
-            _fill = Fill;
+            if (string.IsNullOrEmpty(value))
+            {
+                throw new ArgumentNullException("Color incorrect");
+            }
+            _color = value;
         }
+    }
+    public bool Fill { get { return _fill; } set { _fill = value; } }
+    public Shape()
+    {
+        _color = "green";
+        _fill = true;
+    }
+    public Shape(string Color, bool Fill)
+    {
+        _color = Color;
+        _fill = Fill;
+    }
 
-        public override string ToString()
+    /// <summary>
+    /// Return string: class Shape
+    /// </summary>
+    /// <returns></returns>
+    public override string ToString()
+    {
+        try
         {
-            try
-            {
-                string isFilled = _fill == true ? "filled" : "not filled";
-                string text = "A Shape with color of " + _color + " and " + isFilled;
-                return text;
-            }
-            catch (Exception e)
-            {
-                return e.Message;
-            }
-
+            string isFilled = _fill == true
+                ? "filled"
+                : "not filled";
+            string text = $"A Shape with color of {_color} and {isFilled}";
+            return text;
+        }
+        catch (Exception e)
+        {
+            return e.Message;
         }
     }
 }
