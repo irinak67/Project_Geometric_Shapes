@@ -42,15 +42,25 @@ public class Rectangle : Shape, IGeometricObject
             double area = Math.Round(_width * _length, 2);
             return area;
         }
-        else
+        else if (_width == 0 || _length == 0)
         {
-            string outText = (_width <= 0 && _length <= 0) 
-                ? "incorrect Width and Length value"
-                : _width <= 0 
-                ? "incorrect Width value" 
-                : "incorrect Length value";
+            string outText = (_width == 0 && _length == 0)
+                ? "Width and Length cannot be zero"
+                : _width == 0
+                ? "Width cannot be zero"
+                : "Length cannot be zero";
             Console.WriteLine(outText);
             return 0;
+        }
+        else
+        {
+            string outText = (_width < 0 && _length < 0)
+                ? "Width and Length cannot be negative"
+                : _width < 0
+                ? "Width cannot be negative"
+                : "Length cannot be negative";
+            Console.WriteLine(outText);
+            return -1;
         }
     }
 
@@ -66,15 +76,25 @@ public class Rectangle : Shape, IGeometricObject
             double perimeter = Math.Round(2 * (_width + _length), 2);
             return perimeter;
         }
-        else
+        else if (_width == 0 || _length == 0)
         {
-            string outText = (_width <= 0 && _length <= 0) 
-                ? "incorrect Width and Length value" 
-                : _width <= 0 
-                ? "incorrect Width value" 
-                : "incorrect Length value";
+            string outText = (_width == 0 && _length == 0)
+                ? "Width and Length cannot be zero"
+                : _width == 0
+                ? "Width cannot be zero"
+                : "Length cannot be zero";
             Console.WriteLine(outText);
             return 0;
+        }
+        else
+        {
+            string outText = (_width < 0 && _length < 0)
+                ? "Width and Length cannot be negative"
+                : _width < 0
+                ? "Width cannot be negative"
+                : "Length cannot be negative";
+            Console.WriteLine(outText);
+            return -1;
         }
     }
 

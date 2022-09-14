@@ -104,7 +104,7 @@ namespace Project_Geometric_Shapes_Framework.Test
 
             // arrange
             Circle circle = new Circle(-3.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = circle.getArea();
@@ -119,7 +119,7 @@ namespace Project_Geometric_Shapes_Framework.Test
 
             // arrange
             Circle circle = new Circle(-75.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = circle.getPerimeter();

@@ -34,7 +34,12 @@ public class Circle : Shape, IGeometricObject
         }
         else
         {
-            Console.WriteLine("incorrect radius value");
+            if (_radius < 0)
+            {
+                Console.WriteLine("Radius cannot be negative");
+                return -1;
+            }
+            Console.WriteLine("Radius cannot be zero");
             return 0;
         }
     }
@@ -52,7 +57,12 @@ public class Circle : Shape, IGeometricObject
         }
         else
         {
-            Console.WriteLine("incorrect radius value");
+            if (_radius < 0)
+            {
+                Console.WriteLine("Radius cannot be negative");
+                return -1;
+            }
+            Console.WriteLine("Radius cannot be zero");
             return 0;
         }
     }

@@ -97,7 +97,7 @@ namespace Project_Geometric_Shapes_Framework.Test
         {
             // arrange
             Rectangle rectangle = new Rectangle(5.0, -16.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = rectangle.getArea();
@@ -111,7 +111,7 @@ namespace Project_Geometric_Shapes_Framework.Test
         {
             // arrange
             Rectangle rectangle = new Rectangle(5.0, -6.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = rectangle.getPerimeter();
@@ -125,7 +125,7 @@ namespace Project_Geometric_Shapes_Framework.Test
         {
             // arrange
             Rectangle rectangle = new Rectangle(-9.0, 3.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = rectangle.getArea();
@@ -139,7 +139,7 @@ namespace Project_Geometric_Shapes_Framework.Test
         {
             // arrange
             Rectangle rectangle = new Rectangle(-29.0, 4.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = rectangle.getPerimeter();
@@ -153,7 +153,7 @@ namespace Project_Geometric_Shapes_Framework.Test
         {
             // arrange
             Rectangle rectangle = new Rectangle(-55.0, -11.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = rectangle.getArea();
@@ -167,7 +167,7 @@ namespace Project_Geometric_Shapes_Framework.Test
         {
             // arrange
             Rectangle rectangle = new Rectangle(-89.0, -5.0);
-            double expected = 0;
+            double expected = -1;
 
             // act
             double actual = rectangle.getPerimeter();

@@ -58,14 +58,14 @@ public class CircleTest
     public void Test_class_Circle_get_area_when_Radius_is_negative()
     {
         circle.Radius = -3.0;
-        Assert.That(circle.getArea(), Is.EqualTo(0));
+        Assert.That(circle.getArea(), Is.EqualTo(-1));
     }
 
     [Test]
     public void Test_class_Circle_get_perimeter_when_Radius_is_negative()
     {
         circle.Radius = -75.0;
-        Assert.That(circle.getPerimeter(), Is.EqualTo(0));
+        Assert.That(circle.getPerimeter(), Is.EqualTo(-1));
     }
 
     [Test]

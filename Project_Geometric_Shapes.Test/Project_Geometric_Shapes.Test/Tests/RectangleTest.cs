@@ -62,7 +62,7 @@ public class RectangleTest
     {
         rectangle.Width = 5.0;
         rectangle.Length = -16.0;
-        Assert.That(rectangle.getArea(), Is.EqualTo(0));
+        Assert.That(rectangle.getArea(), Is.EqualTo(-1));
     }
 
     [Test]
@@ -70,7 +70,7 @@ public class RectangleTest
     {
         rectangle.Width = 5.0;
         rectangle.Length = -6.0;            
-        Assert.That(rectangle.getPerimeter(), Is.EqualTo(0));
+        Assert.That(rectangle.getPerimeter(), Is.EqualTo(-1));
     }
     
     [Test]
@@ -78,7 +78,7 @@ public class RectangleTest
     {
         rectangle.Width = -9.0;
         rectangle.Length = 3.0;
-        Assert.That(rectangle.getArea(), Is.EqualTo(0));
+        Assert.That(rectangle.getArea(), Is.EqualTo(-1));
     }
 
     [Test]
@@ -86,7 +86,7 @@ public class RectangleTest
     {
         rectangle.Width = -19.0;
         rectangle.Length = 4.0;
-        Assert.That(rectangle.getPerimeter(), Is.EqualTo(0));
+        Assert.That(rectangle.getPerimeter(), Is.EqualTo(-1));
     }
 
     [Test]
@@ -94,7 +94,7 @@ public class RectangleTest
     {
         rectangle.Width = -55.0;
         rectangle.Length = -11.0;
-        Assert.That(rectangle.getArea(), Is.EqualTo(0));
+        Assert.That(rectangle.getArea(), Is.EqualTo(-1));
     }
 
     [Test]
@@ -102,7 +102,7 @@ public class RectangleTest
     {
         rectangle.Width = -89.0;
         rectangle.Length = -5.0;
-        Assert.That(rectangle.getPerimeter(), Is.EqualTo(0));
+        Assert.That(rectangle.getPerimeter(), Is.EqualTo(-1));
     }
 
     [Test]
